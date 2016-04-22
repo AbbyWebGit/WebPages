@@ -1,0 +1,97 @@
+/**
+ * Created by Veblin on 2/17/16.
+ */
+.sidebar {
+  float: left;
+  width: 200px;
+  clear: left; }
+
+.relative {
+  position: relative; }
+
+.chosen-container .chosen-drop {
+  width: 100%; }
+  .chosen-container .chosen-drop ul {
+    padding: 0;
+    margin: 0; }
+  .chosen-container .chosen-drop .chosen-container-single .chosen-search input[type="text"] {
+    width: 96%; }
+
+.dateRange {
+  background: #ccc; }
+
+div.dataTables_length label {
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap; }
+
+div.dataTables_length select {
+  width: 75px;
+  display: inline-block; }
+
+div.dataTables_paginate {
+  margin: 0;
+  white-space: nowrap;
+  text-align: right; }
+
+div.dataTables_paginate ul.pagination {
+  margin: 2px 0;
+  white-space: nowrap; }
+
+@media screen and (max-width: 767px) {
+  div.dataTables_length,
+  div.dataTables_filter,
+  div.dataTables_info,
+  div.dataTables_paginate {
+    text-align: center; } }
+@media (min-width: 768px) {
+  #domContainer {
+    position: inherit;
+    margin: 0 0 0 250px;
+    padding: 0 30px;
+    border-left: 1px solid #e7e7e7; }
+
+  .sidebar {
+    z-index: 1;
+    position: absolute;
+    width: 250px; }
+
+  .navbar-top-links .dropdown-messages,
+  .navbar-top-links .dropdown-tasks,
+  .navbar-top-links .dropdown-alerts {
+    margin-left: auto; } }
+@media (min-width: 1200px) {
+  #domContainer {
+    width: auto; } }
+/*
+ * jQuery File Upload Plugin CSS
+ * https://github.com/blueimp/jQuery-File-Upload
+ *
+ * Copyright 2013, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+  display: inline-block; }
+
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  -ms-filter: 'alpha(opacity=0)';
+  font-size: 200px !important;
+  direction: ltr;
+  cursor: pointer; }
+
+/* Fixes for IE < 8 */
+@media screen\9 {
+  .fileinput-button input {
+    filter: alpha(opacity=0);
+    font-size: 100%;
+    height: 100%; } }

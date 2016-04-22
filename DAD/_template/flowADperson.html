@@ -1,0 +1,57 @@
+<%  include common/header.html %>
+    <%  include common/topbar.html %>
+        <div class="flow">
+            <%  include common/sidebar.html %>
+                <div class="flow-person">
+                    <p class="flow-title">汽车品牌营销事业部流量报告</p>
+                    <div class="person-data">
+                        <div class="person-select">
+                            <!-- person-lately start-->
+                            <div class="person-lately">
+                                <select class="chosen" data-node="chosen">
+                                    <option value="-1">最近七天</option>
+                                    <option value="0">最近十五天</option>
+                                    <option value="1">最近一个月</option>
+                                    <option value="2">正在投放</option>
+                                    <option value="3">已完成</option>
+                                    <option value="4">暂停</option>
+                                </select>
+                            </div>
+                            <!-- person-lately stop-->
+                            <!-- person-date start -->
+                            <div class="person-date clearfix">
+                                <div class="input-group date" data-node="datetimepicker">
+                                    <input type="text" class="form-control" name="start_date">
+                                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                                <span class="input-word">到</span>
+                                <div class="input-group date" data-node="datetimepicker">
+                                    <input type="text" class="form-control" name="start_date">
+                                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- person-date stop -->
+                            <div class="person-echars">
+                                <img src="../img/flowPerEchars.png">
+                            </div>
+                            <div class="person-export">
+                                <button><i class="fa fa-calendar"></i>导出分日报告</button>
+                                <button><i class="fa fa-clock-o"></i>导出分时报告</button>
+                            </div>
+
+                            <div class="person-table">
+                                <div id="table2"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <%  include common/footer.html %>
+            <script>
+            seajs.use("http://bigstatic.bitautoimg.com/apps/DataTest/js/pages/zhangjing/main");
+            </script>

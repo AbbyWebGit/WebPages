@@ -1,0 +1,14 @@
+/**
+ * Created by Veblin on 6/3/15.
+ */
+/**
+ * Created by Veblin on 2/17/16.
+ */
+.footer {
+  background: url("../../images/login-footer.png?v=123") no-repeat 50% 0;
+  width: 192px;
+  height: 25px;
+  position: absolute;
+  left: 50%;
+  margin: 340px 0 0 -96px;
+  top: 50%; }

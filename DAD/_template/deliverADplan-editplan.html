@@ -1,0 +1,138 @@
+<%  include common/header.html %>
+    <%  include common/topbar.html %>
+        <div class="deliver">
+            <div class="deliver-title">编辑某某广告计划</div>
+            <div class="deliver-edit-form">
+                <form>
+                    <div class="form-row">
+                        <span class="form-row-name">导入广告计划</span>
+                        <div class="form-row-content">
+                            <select class="chosen" data-node="chosen-search">
+                                <option value="-1">全部状态</option>
+                                <option value="0">草稿</option>
+                                <option value="1">即将投放</option>
+                                <option value="2">正在投放</option>
+                                <option value="3">已完成</option>
+                                <option value="4">暂停</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <span class="form-row-name row-title">基本信息</span>
+                    </div>
+                    <div class="form-row xs-row">
+                        <span class="form-row-name">广告计划名称</span>
+                        <div class="form-row-content">
+                            <input class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <span class="form-row-name">投放时间</span>
+                        <div class="form-row-content">
+                            <div class="deliver-date clearfix">
+                                <div class="input-group date" data-node="datetimepicker">
+                                    <input type="text" class="form-control" name="start_date">
+                                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                                <span class="input-word">到</span>
+                                <div class="input-group date" data-node="datetimepicker">
+                                    <input type="text" class="form-control" name="start_date">
+                                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary"><i class="fa  fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <span class="form-row-name">简介/备注</span>
+                        <div class="form-row-content">
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <span class="form-row-name">定量投放</span>
+                    </div>
+                    <div class="form-row">
+                        <span class="form-row-name">总量限定</span>
+                        <div class="form-row-content">
+                            <div class="form-row-content">
+                                <input class="content-input" type="text">次曝光
+                                <input class="content-input input-margin" type="text">次点击
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <span class="form-row-name">每天限定</span>
+                        <div class="form-row-content">
+                            <div class="form-row-content">
+                                <input class="content-input" type="text">次曝光
+                                <input class="content-input input-margin" type="text">次点击
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <span class="form-row-name">每天限定</span>
+                        <div class="form-row-content">
+                            <div class="form-row-content">
+                                <input class="content-input" type="text">次曝光
+                                <input class="content-input input-margin" type="text">次点击
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <span class="form-row-name">每访客每天曝光</span>
+                        <div class="form-row-content">
+                            <div class="form-row-content">
+                                <input class="content-input" type="text">次曝光
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <span class="form-row-name">每访客每小时曝光</span>
+                        <div class="form-row-content">
+                            <div class="form-row-content">
+                                <input class="content-input" type="text">次曝光
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <span class="form-row-name">定投设置</span>
+                    </div>
+                    <div class="form-row">
+                        <span class="form-row-name"></span>
+                        <div class="form-row-content">
+                            <div class="form-row-content">
+                                <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i>添加广告位</button>
+                                <p class="warn-word">请添加私有广告位后设置定投</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <span class="form-row-name">已添加广告位</span>
+                        <div class="form-row-content">
+                            <ul class="form-upload-list">
+                                <li><span>物料名称 图片  220*80</span>
+                                    <button type="button" class="btn btn-danger"><i class="fa  fa-remove"></i></button>
+                                </li>
+                                <li><span>物料名称 图片  220*80</span>
+                                    <button type="button" class="btn btn-danger"><i class="fa  fa-remove"></i></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="deliver-edit-btn">
+                <button type="button" class="btn btn-primary">取消</button>
+                <button type="button" class="btn btn-warning">保存</button>
+                <button type="button" class="btn btn-warning btn-big">保存并查看分组</button>
+            </div>
+        </div>
+        <%  include common/footer.html %>
+            <script>
+            seajs.use("http://bigstatic.bitautoimg.com/apps/DataTest/js/pages/zhangjing/main");
+            </script>

@@ -1,0 +1,94 @@
+<%  include common/header.html %>
+    <%  include common/topbar.html %>
+        <div class="flow">
+            <%  include common/sidebarDe.html %>
+                <div class="flow-person">
+                    <div class="deliver-group-panel">
+                        <div class="group-panel-title"><a href="">全部广告计划</a>&gt;某某广告计划</div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                广告组简介 状态：正在投放
+                            </div>
+                            <div class="panel-body">
+                                <p>投放时间：开始：2015-08-06   结束：不限</p>
+                                <p>定量投放：总曝光量：1223,223,445  总点击限定：1223,223,445 每天曝光限定：1223,223,445， 每天点击限定：1223,223,445 总访客每天曝光：1223,223,445 </p>
+                                <p>定投位置：广告位名称</p>
+                            </div>
+                            <!-- /.panel-body -->
+                        </div>
+                        <!-- /.panel -->
+                    </div>
+
+                    <div class="deliver-list-title">
+                    <span><a  class="curTitle" href="#">广告组列表</a></span>
+                        <span><a href="#">广告物料</a></span>
+                    </div>
+                    <div class="plan-query">
+                        <!-- deliver-lately start-->
+                        <div class="deliver-lately">
+                            <select class="chosen" data-node="chosen">
+                                <option value="-1">全部状态</option>
+                                <option value="0">最近十五天</option>
+                                <option value="1">最近一个月</option>
+                                <option value="2">正在投放</option>
+                                <option value="3">已完成</option>
+                                <option value="4">暂停</option>
+                            </select>
+                        </div>
+                        <!-- deliver-lately stop-->
+                       
+                        <!-- deliver-date start -->
+                        <div class="deliver-date clearfix">
+                            <div class="input-group date" data-node="datetimepicker">
+                                <input type="text" class="form-control" name="start_date">
+                                <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                            <span class="input-word">到</span>
+                            <div class="input-group date" data-node="datetimepicker">
+                                <input type="text" class="form-control" name="start_date">
+                                <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- deliver-date stop -->
+                        <!--deliver-search   start-->
+                        <div class="deliver-search">
+                            <div class="input-group">
+                                <input id="btn-input" type="text" class="form-control input-sm" placeholder="请输入关键词">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary btn-sm" id="btn-chat">
+                                       搜索
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- deliver-search  end-->
+                    </div>
+                    <!-- plan-query-->
+                    <p class="flow-title">
+                        物料列表
+                    </p>
+                    <div class="deliver-data">
+                        <!--deliver-data-btn start  -->
+                        <div class="deliver-data-btn">
+                             <button type="button" class="btn btn-primary btn-margin"><i class="fa fa-plus"></i>新建组</button>
+                            <button type="button" class="btn btn-success"><i class="fa fa-play"></i>开启</button>
+                            <button type="button" class="btn btn-warning"><i class="fa fa-pause"></i>暂停</button>
+                            <button type="button" class="btn btn-danger"><i class="fa  fa-remove"></i>删除</button>
+                        </div>
+                        <!-- deliver-data-btn stop -->
+                        <div class="deliver-data-table">
+                            <div id="dataTable" class="table dataTable" role="grid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- flow-person-->
+        </div>
+        <%  include common/footer.html %>
+            <script>
+            seajs.use("http://bigstatic.bitautoimg.com/apps/DataTest/js/pages/zhangjing/main");
+            </script>

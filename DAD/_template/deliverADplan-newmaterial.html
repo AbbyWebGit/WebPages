@@ -1,0 +1,134 @@
+<%  include common/header.html %>
+    <%  include common/topbar.html %>
+        <div class="deliver">
+            <div class="deliver-title">新建广告</div>
+            <div class="deliver-steps">
+                <div class="process-line">
+                    <span class="process-line-s color-orange"></span>
+                    <span class="process-line-b color-red"></span>
+                    <span class="process-line-b color-blue"></span>
+                    <span class="process-line-s"></span>
+                </div>
+                <div class="process-content">
+                    <ul>
+                        <li>
+                            <p class="process-word word-black ">广告计划<i class="fa fa-check"></i></p>
+                            <p class="process-plan-word">
+                                <span>上海大众POLO，3年零利率，日供只需50元</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="process-word word-black ">广告组<i class="fa fa-check"></i></p>
+                            <p class="process-group-word">
+                                <span>上海大众POLO，3年零利率，日供只需50元</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="process-word word-blue">上传物料</p>
+                            <p class="process-number color-blue"><i>3</i></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="deliver-edit-form">
+                <form>
+                    <div class="form-row">
+                        <span class="form-row-name">选择物料类型</span>
+                        <div class="form-row-content">
+                            <label class="radio-inline">
+                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked="">图片/Flash
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">文本
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <span class="form-row-name row-title">基本信息</span>
+                    </div>
+                    <div class="form-row xs-row">
+                        <span class="form-row-name">支持尺寸</span>
+                        <div class="form-row-content clearfix">
+                            <ul class="form-upload-size ">
+                                <li>1*2</li>
+                                <li>7*3</li>
+                                <li>11*22</li>
+                                <li>12*33</li>
+                                <li>18*20</li>
+                                <li>1*20</li>
+                                <li>10*2</li>
+                                <li>1*20</li>
+                                <li>10*2</li>
+                                <li>1*20</li>
+                                <li>10*2</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <span class="form-row-name">导入物料</span>
+                        <div class="form-row-content">
+                            <div class="form-material-chose">
+                                <select class="chosen" data-node="chosen">
+                                    <option value="-1">全部状态</option>
+                                    <option value="0">草稿</option>
+                                    <option value="1">即将投放</option>
+                                    <option value="2">正在投放</option>
+                                    <option value="3">已完成</option>
+                                    <option value="4">暂停</option>
+                                </select>
+                            </div>
+                            <div class="form-material-chose">
+                                <select class="chosen" data-node="chosen-search">
+                                    <option value="-1">全部状态</option>
+                                    <option value="0">草稿</option>
+                                    <option value="1">即将投放</option>
+                                    <option value="2">正在投放</option>
+                                    <option value="3">已完成</option>
+                                    <option value="4">暂停</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <span class="form-row-name">本地上传</span>
+                        <div class="form-row-content">
+                             <button type="button" class="btn btn-primary">本地上传</button>
+                             <span class="form-upload-success">成功添加0物料，0与现有重复，0尺寸无效</span>
+                              <p class="warn-word">目前仅支持图片、Flash物料</p>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <span class="form-row-name">已上传</span>
+                        <div class="form-row-content">
+                          <ul class="form-upload-list">
+                              <li><span>物料名称 图片  220*80</span> <button type="button" class="btn btn-danger"><i class="fa  fa-remove"></i></button></li>
+                               <li><span>物料名称 图片  220*80</span> <button type="button" class="btn btn-danger"><i class="fa  fa-remove"></i></button></li>
+                          </ul>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <span class="form-row-name">链接地址</span>
+                        <div class="form-row-content">
+                            <input class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <span class="form-row-name">移动链接地址</span>
+                        <div class="form-row-content">
+                           <input class="form-control" type="text">
+                           <p class="warn-word">链接地址和移动链接地址至少必填一个</p>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="deliver-edit-btn">
+                <button type="button" class="btn btn-primary">取消</button>
+                <button type="button" class="btn btn-primary">上一步</button>
+                <button type="button" class="btn btn-warning">保存</button>
+            </div>
+        </div>
+        <%  include common/footer.html %>
+            <script>
+            seajs.use("http://bigstatic.bitautoimg.com/apps/DataTest/js/pages/zhangjing/main");
+            </script>

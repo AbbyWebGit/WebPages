@@ -1,0 +1,43 @@
+<%  include common/header.html %>
+<%  include common/topbar.html %>
+<%  include common/sidebar.html %>
+
+<div id="domContainer" class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Charts</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="line" style="height: 300px"></div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="bar" style="height: 300px"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="pie" style="height: 300px"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="chinamap" style="height: 500px"></div>
+        </div>
+    </div>
+</div> <!-- /container -->
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<%  include common/footer.html %>
+
+<script>
+    seajs.use("http://bigstatic.bitautoimg.com/apps/bootstrapbase/js/pages/charts/main");
+</script>

@@ -1,0 +1,74 @@
+<%  include common/header.html %>
+    <%  include common/topbar.html %>
+        <div class="deliver">
+            <div class="deliver-title">私有广告效果控制</div>
+            <div class="deliver-edit-form">
+                <form>
+                    <div class="form-row">
+                        <span class="form-row-name">总量时间限定</span>
+                        <div class="form-row-content">
+                            <div class="deliver-date clearfix">
+                                <div class="input-group date" data-node="datetimepicker">
+                                    <input type="text" class="form-control" name="start_date">
+                                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                                <span class="input-word">到</span>
+                                <div class="input-group date" data-node="datetimepicker">
+                                    <input type="text" class="form-control" name="start_date">
+                                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="form-row">
+                            <span class="form-row-name">总量限定</span>
+                            <div class="form-row-content">
+                                <input class="content-input" type="text">次曝光
+                                <input class="content-input input-margin" type="text">次点击 </div>
+                        </div>
+                        <div class="form-row">
+                            <span class="form-row-name">总预算限定</span>
+                            <div class="form-row-content">
+                                <input class="content-input" type="text">
+                            </div>
+                        </div>
+                </form>
+            </div>
+           
+            <div class="deliver-edit-form">
+                <form>
+                    <div class="form-row">
+                        <span class="form-row-name">每天限定</span>
+                        <div class="form-row-content">
+                            <input class="content-input" type="text">次曝光
+                            <input class="content-input input-margin" type="text">次点击
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <span class="form-row-name">总量限定</span>
+                        <div class="form-row-content">
+                            <input class="content-input" type="text">次曝光
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <span class="form-row-name">总预算限定</span>
+                        <div class="form-row-content">
+                            <input class="content-input" type="text">次曝光
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="deliver-edit-btn">
+                <button type="button" class="btn btn-primary">取消</button>
+                <button type="button" class="btn btn-warning">确定</button>
+
+            </div>
+        </div>
+        <%  include common/footer.html %>
+            <script>
+            seajs.use("http://bigstatic.bitautoimg.com/apps/DataTest/js/pages/zhangjing/main");
+            </script>

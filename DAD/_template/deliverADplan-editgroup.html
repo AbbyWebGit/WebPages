@@ -1,0 +1,331 @@
+<%  include common/header.html %>
+    <%  include common/topbar.html %>
+        <div class="deliver">
+            <div class="deliver-title">新建广告</div>
+            
+            <div class="deliver-edit-form">
+                <form>
+                    <div class="form-row">
+                        <span class="form-row-name">导入广告计划</span>
+                        <div class="form-row-content">
+                            <div class="form-chosen">
+                                <select class="chosen" data-node="chosen">
+                                    <option value="-1">全部状态</option>
+                                    <option value="0">草稿</option>
+                                    <option value="1">即将投放</option>
+                                    <option value="2">正在投放</option>
+                                    <option value="3">已完成</option>
+                                    <option value="4">暂停</option>
+                                </select>
+                            </div>
+                            <div class="form-chosen">
+                                <select class="chosen" data-node="chosen">
+                                    <option value="-1">全部状态</option>
+                                    <option value="0">草稿</option>
+                                    <option value="1">即将投放</option>
+                                    <option value="2">正在投放</option>
+                                    <option value="3">已完成</option>
+                                    <option value="4">暂停</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <span class="form-row-name row-title">基本信息</span>
+                    </div>
+                    <div class="form-row xs-row">
+                        <span class="form-row-name">广告组名称</span>
+                        <div class="form-row-content">
+                            <input class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <span class="form-row-name  row-title">投放地域</span>
+                    </div>
+                    <div class="form-row xs-row">
+                        <span class="form-row-name ">地域定向</span>
+                        <div class="form-row-content">
+                            <label class="radio-inline">
+                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked="">不限
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">选择地域
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-regional">
+                        <div class="form-regional-panel">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    未选省市
+                                </div>
+                                <div class="panel-body">
+                                    <ul class="form-regional-first">
+                                        <li>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox">全选
+                                            </label>
+                                        </li>
+                                        <ul class="form-regional-second">
+                                            <li>
+                                                <i class="fa fa-caret-down"></i>
+                                                <label class="checkbox-inline">
+                                                    <input type="checkbox">安徽
+                                                </label>
+                                            </li>
+                                            <ul class="form-regional-third">
+                                                <li>
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox">城市
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox">城市
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                            <li>
+                                                <i class="fa fa-caret-right"></i>
+                                                <label class="checkbox-inline">
+                                                    <input type="checkbox">河北
+                                                </label>
+                                            </li>
+                                            <ul class="form-regional-third">
+                                                <li>
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox">城市
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox">城市
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                            <li>
+                                                <i class="fa fa-caret-right"></i>
+                                                <label class="checkbox-inline">
+                                                    <input type="checkbox">山西
+                                                </label>
+                                            </li>
+                                            <ul class="form-regional-third">
+                                                <li>
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox">城市
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox">城市
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                            <li>
+                                                <i class="fa fa-caret-right"></i>
+                                                <label class="checkbox-inline">
+                                                    <input type="checkbox">山西
+                                                </label>
+                                            </li>
+                                            <ul class="form-regional-third">
+                                                <li>
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox">城市
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox">城市
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </ul>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-margin">添加<i class="fa fa-caret-right"></i></button>
+                        <div class="form-regional-panel">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading clearfix">
+                                    <span>已选择<i>0</i>省市</span>
+                                    <span class="panel-right">
+                                <i class="fa fa-trash-o"></i>清空
+                                </span>
+                                </div>
+                                <div class="panel-body">
+                                    <p>安徽 城市名<i class="fa fa-close panel-right"></i></p>
+                                    <p>安徽 城市名<i class="fa fa-close panel-right"></i></p>
+                                    <p>安徽 城市名<i class="fa fa-close panel-right"></i></p>
+                                    <p>安徽 城市名<i class="fa fa-close panel-right"></i></p>
+                                    <p>安徽 城市名<i class="fa fa-close panel-right"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <span class="form-row-name  row-title">精准定向投放</span>
+                    </div>
+                    <div class="form-row xs-row">
+                        <span class="form-row-name">人群定向条件</span>
+                        <div class="form-row-content ">
+                            <div class="form-row-content">
+                                <label class="checkbox-inline">
+                                    <input type="checkbox">车型
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox">车型相关
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-models">
+                        <div class="form-regional ">
+                            <div class="form-models-panel">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                        <span>未选车型</span>
+                                        <span class="panel-right">
+                                     <i class="fa fa-search"></i>搜索</span>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="form-regional-search">
+                                            <div class="form-regional-chosen">
+                                                <select class="chosen" data-node="chosen">
+                                                    <option value="-1">全部状态</option>
+                                                    <option value="0">草稿</option>
+                                                    <option value="1">即将投放</option>
+                                                    <option value="2">正在投放</option>
+                                                    <option value="3">已完成</option>
+                                                    <option value="4">暂停</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-regional-chosen">
+                                                <select class="chosen" data-node="chosen">
+                                                    <option value="-1">全部状态</option>
+                                                    <option value="0">草稿</option>
+                                                    <option value="1">即将投放</option>
+                                                    <option value="2">正在投放</option>
+                                                    <option value="3">已完成</option>
+                                                    <option value="4">暂停</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-regional-chosen">
+                                                <select class="chosen" data-node="chosen">
+                                                    <option value="-1">全部状态</option>
+                                                    <option value="0">草稿</option>
+                                                    <option value="1">即将投放</option>
+                                                    <option value="2">正在投放</option>
+                                                    <option value="3">已完成</option>
+                                                    <option value="4">暂停</option>
+                                                </select>
+                                            </div>
+                                            <input type="text" class="form-regional-input"> 到
+                                            <input type="text" class="form-regional-input">
+                                            <button type="button" class="btn btn-warning">确定</button>
+                                            <button type="button" class="btn btn-primary">取消</button>
+                                        </div>
+                                        <ul class="form-regional-first">
+                                            <li>
+                                                <label class="checkbox-inline">
+                                                    <input type="checkbox">全选
+                                                </label>
+                                            </li>
+                                            <ul class="form-regional-second">
+                                                <li>
+                                                    <i class="fa fa-caret-down"></i>
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox">安徽
+                                                    </label>
+                                                </li>
+                                                <ul class="form-regional-third">
+                                                    <li>
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox">城市
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox">城市
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                                <li>
+                                                    <i class="fa fa-caret-right"></i>
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox">河北
+                                                    </label>
+                                                </li>
+                                                <ul class="form-regional-third">
+                                                    <li>
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox">城市
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox">城市
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                                <li>
+                                                    <i class="fa fa-caret-right"></i>
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox">山西
+                                                    </label>
+                                                </li>
+                                                <ul class="form-regional-third">
+                                                    <li>
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox">城市
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox">城市
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-margin">添加<i class="fa fa-caret-right"></i></button>
+                            <div class="form-regional-panel">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading clearfix">
+                                        <span>已选择<i>3</i>车型</span>
+                                        <span class="panel-right">
+                                <i class="fa fa-trash-o"></i>清空
+                                </span>
+                                    </div>
+                                    <div class="panel-body">
+                                        <p>厂商 车型<i class="fa fa-close panel-right"></i></p>
+                                        <p>厂商 车型<i class="fa fa-close panel-right"></i></p>
+                                        <p>厂商 车型<i class="fa fa-close panel-right"></i></p>
+                                        <p>厂商 车型<i class="fa fa-close panel-right"></i></p>
+                                        <p>厂商 车型<i class="fa fa-close panel-right"></i></p>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox">自动投放竞品车型
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="deliver-edit-btn">
+                <button type="button" class="btn btn-primary">取消</button>
+                <button type="button" class="btn btn-primary">上一步</button>
+                <button type="button" class="btn btn-warning">保存</button>
+                <button type="button" class="btn btn-warning btn-big">保存并查看分组</button>
+            </div>
+        </div>
+        <%  include common/footer.html %>
+            <script>
+            seajs.use("http://bigstatic.bitautoimg.com/apps/DataTest/js/pages/zhangjing/main");
+            </script>

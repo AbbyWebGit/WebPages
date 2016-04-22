@@ -1,0 +1,51 @@
+<%  include common/header.html %>
+    <%  include common/topbar.html %>
+        <div class="deliver">
+            <div class="deliver-title">某某广告主 添加私有广告位</div>
+            <div class="deliver-query">
+                <!-- deliver-date start -->
+                <div class="deliver-date clearfix">
+                    <div class="input-group date" data-node="datetimepicker">
+                        <input type="text" class="form-control" name="start_date">
+                        <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                    <span class="input-word">到</span>
+                    <div class="input-group date" data-node="datetimepicker">
+                        <input type="text" class="form-control" name="start_date">
+                        <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+                <!-- deliver-date stop -->
+                <button type="button" class="btn btn-primary">查询</button>
+            </div>
+            <div class="deliver-data-table">
+                <div id="dataTable" class="table dataTable" role="grid">
+                </div>
+            </div>
+            <div class="deliver-data-info">
+                <p class="info-title">已选择广告位</p>
+                <ul>
+                    <li>
+                        <span>广告位名称/媒体/频道/类型/尺寸/投放平台</span>
+                        <button type="button" class="btn btn-danger"><i class="fa  fa-remove"></i></button>
+                    </li>
+                    <li>
+                        <span>广告位名称/媒体/频道/类型/尺寸/投放平台</span>
+                        <button type="button" class="btn btn-danger"><i class="fa  fa-remove"></i></button>
+                        <p>未设置排期</p>
+                    </li>
+                    <li>
+                        <span>广告位名称/媒体/频道/类型/尺寸/投放平台</span>
+                        <button type="button" class="btn btn-danger"><i class="fa  fa-remove"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <%  include common/footer.html %>
+            <script>
+            seajs.use("http://bigstatic.bitautoimg.com/apps/DataTest/js/pages/zhangjing/main");
+            </script>

@@ -1,0 +1,511 @@
+<%  include common/header.html %>
+<%  include common/topbar.html %>
+<%  include common/sidebar.html %>
+<style>
+    
+</style>
+
+<div id="domContainer" class="container">
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Widgets</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h3>POP</h3>
+            <button type="button" class="btn btn-default" data-toggle="popover" title=""
+                    data-content="And here's some amazing content. It's very engaging. Right?"
+                    data-original-title="Popover title">点我弹出/隐藏弹出框
+            </button>
+
+            <button tabindex="0" class="btn btn-default" role="button" data-toggle="popover" data-trigger="focus"
+                    title="Dismissible popover"
+                    data-content="And here's some amazing content. It's very engaging. Right?">可消失的弹出框
+            </button>
+
+            <button type="button" class="btn btn-default" data-container="body" data-toggle="popover"
+                    data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover on 左侧
+            </button>
+
+            <button type="button" class="btn btn-default" data-container="body" data-toggle="popover"
+                    data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover on 顶部
+            </button>
+
+            <button type="button" class="btn btn-default" data-container="body" data-toggle="popover"
+                    data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover on 底部
+            </button>
+
+            <button type="button" class="btn btn-default" data-container="body" data-toggle="popover"
+                    data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover on 右侧
+            </button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h3>Uploadify</h3>
+            <input id="fileupload00" type="file" name="files[]" >
+            需要在项目域下放置swf文件 widgets/jQuery.uploadify/1.0.0/uploadify.swf
+        </div>
+        <div class="col-lg-12">
+            <h3>Uploadifive</h3>
+            <input id="fileupload01" type="file" name="files[]" >
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+        <h3>jQuery-File-Upload</h3>
+        <div class="bs-example bs-example-tabs">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#upload-basic" id="upload-basic-tab" role="tab"
+                                                          data-toggle="tab"
+                                                          aria-controls="Basic" aria-expanded="true">Basic</a></li>
+                <li role="presentation"><a href="#upload-basic-plus" role="tab" id="upload-basic-plus-tab"
+                                           data-toggle="tab"
+                                           aria-controls="Basic Plus">Basic Plus</a></li>
+                <li role="presentation"><a href="#upload-basic-plus-ui" role="tab" id="upload-basic-plus-ui-tab"
+                                           data-toggle="tab"
+                                           aria-controls="Basic Plus">-Basic Plus Ui</a></li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="upload-basic"
+                     aria-labelledBy="upload-basic-tab">
+                    <br>
+                    <div class="col-lg-7">
+                       <span class="btn btn-success fileinput-button">
+                            <i class="glyphicon glyphicon-plus"></i>
+                            <span>Select files...</span>
+                           <!-- The file input field used as target for the file upload widget -->
+                            <input id="fileupload1" type="file" name="files[]" multiple>
+                        </span>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="upload-basic-plus"
+                     aria-labelledBy="upload-basic-plus-tab">
+                    <br>
+                    <div class="col-lg-7">
+                        <span class="btn btn-success fileinput-button">
+                            <i class="glyphicon glyphicon-plus"></i>
+                            <span>Add files...</span>
+                            <!-- The file input field used as target for the file upload widget -->
+                            <input id="fileupload2" type="file" name="files[]" multiple="">
+                        </span>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="upload-basic-plus-ui"
+                     aria-labelledBy="upload-basic-plus-ui-tab">
+                    <br>
+                    <div class="col-lg-7">
+                        <!-- The fileinput-button span is used to style the file input field as button -->
+                <span class="btn btn-success fileinput-button">
+                    <i class="glyphicon glyphicon-plus"></i>
+                    <span>Add files...</span>
+                    <input type="file" name="files[]" multiple="">
+                </span>
+                        <button type="submit" class="btn btn-primary start">
+                            <i class="glyphicon glyphicon-upload"></i>
+                            <span>Start upload</span>
+                        </button>
+                        <button type="reset" class="btn btn-warning cancel">
+                            <i class="glyphicon glyphicon-ban-circle"></i>
+                            <span>Cancel upload</span>
+                        </button>
+                        <button type="button" class="btn btn-danger delete">
+                            <i class="glyphicon glyphicon-trash"></i>
+                            <span>Delete</span>
+                        </button>
+                        <input type="checkbox" class="toggle">
+                        <!-- The global file processing state -->
+                        <span class="fileupload-process"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div><!-- /example -->
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h3>Thumbnails</h3>
+            <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200"
+                 src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzIwMHgyMDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTJiMDgwOGIzYyB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1MmIwODA4YjNjIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9Ijc0LjA1NDY4NzUiIHk9IjEwNC41Ij4yMDB4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+"
+                 data-holder-rendered="true" style="width: 200px; height: 200px;">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h3>Labels</h3>
+            <h1>
+                <span class="label label-default">Default</span>
+                <span class="label label-primary">Primary</span>
+                <span class="label label-success">Success</span>
+                <span class="label label-info">Info</span>
+                <span class="label label-warning">Warning</span>
+                <span class="label label-danger">Danger</span>
+            </h1>
+            <h2>
+                <span class="label label-default">Default</span>
+                <span class="label label-primary">Primary</span>
+                <span class="label label-success">Success</span>
+                <span class="label label-info">Info</span>
+                <span class="label label-warning">Warning</span>
+                <span class="label label-danger">Danger</span>
+            </h2>
+            <h3>
+                <span class="label label-default">Default</span>
+                <span class="label label-primary">Primary</span>
+                <span class="label label-success">Success</span>
+                <span class="label label-info">Info</span>
+                <span class="label label-warning">Warning</span>
+                <span class="label label-danger">Danger</span>
+            </h3>
+            <h4>
+                <span class="label label-default">Default</span>
+                <span class="label label-primary">Primary</span>
+                <span class="label label-success">Success</span>
+                <span class="label label-info">Info</span>
+                <span class="label label-warning">Warning</span>
+                <span class="label label-danger">Danger</span>
+            </h4>
+            <h5>
+                <span class="label label-default">Default</span>
+                <span class="label label-primary">Primary</span>
+                <span class="label label-success">Success</span>
+                <span class="label label-info">Info</span>
+                <span class="label label-warning">Warning</span>
+                <span class="label label-danger">Danger</span>
+            </h5>
+            <h6>
+                <span class="label label-default">Default</span>
+                <span class="label label-primary">Primary</span>
+                <span class="label label-success">Success</span>
+                <span class="label label-info">Info</span>
+                <span class="label label-warning">Warning</span>
+                <span class="label label-danger">Danger</span>
+            </h6>
+            <p>
+                <span class="label label-default">Default</span>
+                <span class="label label-primary">Primary</span>
+                <span class="label label-success">Success</span>
+                <span class="label label-info">Info</span>
+                <span class="label label-warning">Warning</span>
+                <span class="label label-danger">Danger</span>
+            </p>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h3>Badges</h3>
+            <p>
+                <a href="#">Inbox <span class="badge">42</span></a>
+            </p>
+            <ul class="nav nav-pills" role="tablist">
+                <li role="presentation" class="active"><a href="#">Home <span class="badge">42</span></a></li>
+                <li role="presentation"><a href="#">Profile</a></li>
+                <li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h3>Dropdown menus</h3>
+            <div class="dropdown theme-dropdown clearfix">
+                <a id="dropdownMenu1" href="#" class="sr-only dropdown-toggle" data-toggle="dropdown" role="button"
+                   aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li class="active"><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <h1>Navs</h1>
+    </div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+    <ul class="nav nav-pills" role="tablist">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+
+
+    <div class="page-header">
+        <h1>Navbars</h1>
+    </div>
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+
+    <div class="page-header">
+        <h1>Progress bars</h1>
+    </div>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+             style="width: 60%;"><span class="sr-only">60% Complete</span></div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+             aria-valuemax="100" style="width: 40%"><span class="sr-only">40% Complete (success)</span></div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0"
+             aria-valuemax="100" style="width: 20%"><span class="sr-only">20% Complete</span></div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+             aria-valuemax="100" style="width: 60%"><span class="sr-only">60% Complete (warning)</span></div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+             aria-valuemax="100" style="width: 80%"><span class="sr-only">80% Complete (danger)</span></div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+             aria-valuemax="100" style="width: 60%"><span class="sr-only">60% Complete</span></div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-success" style="width: 35%"><span
+                class="sr-only">35% Complete (success)</span></div>
+        <div class="progress-bar progress-bar-warning" style="width: 20%"><span
+                class="sr-only">20% Complete (warning)</span></div>
+        <div class="progress-bar progress-bar-danger" style="width: 10%"><span
+                class='sr-only'>10% Complete (danger)</span></div>
+    </div>
+
+
+    <div class="page-header">
+        <h1>List groups</h1>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <ul class="list-group">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Morbi leo risus</li>
+                <li class="list-group-item">Porta ac consectetur ac</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+        </div><!-- /.col-sm-4 -->
+        <div class="col-sm-4">
+            <div class="list-group">
+                <a href="#" class="list-group-item active">
+                    Cras justo odio
+                </a>
+                <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                <a href="#" class="list-group-item">Morbi leo risus</a>
+                <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+                <a href="#" class="list-group-item">Vestibulum at eros</a>
+            </div>
+        </div><!-- /.col-sm-4 -->
+        <div class="col-sm-4">
+            <div class="list-group">
+                <a href="#" class="list-group-item active">
+                    <h4 class="list-group-item-heading">List group item heading</h4>
+                    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam
+                        eget risus varius blandit.</p>
+                </a>
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">List group item heading</h4>
+                    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam
+                        eget risus varius blandit.</p>
+                </a>
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">List group item heading</h4>
+                    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam
+                        eget risus varius blandit.</p>
+                </a>
+            </div>
+        </div><!-- /.col-sm-4 -->
+    </div>
+
+    <div class="page-header">
+        <h1>Wells</h1>
+    </div>
+    <div class="well">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet
+            non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel
+            scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non
+            commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla
+            sed consectetur.</p>
+    </div>
+    <div class="page-header">
+        <h1>DateTimepicker</h1>
+    </div>
+    <div class="row relative">
+        <div class="col-xs-2">
+            <input type="text" class="form-control" name="start_date" data-node="datetimepicker">
+
+        </div>
+        <div class="col-xs-2">
+            <div class="input-group date" data-node="datetimepicker">
+                <input type="text" class="form-control" name="start_date">
+                <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+            </div>
+        </div>
+    </div>
+    <div class="page-header">
+        <h1>DateTimepicker Range</h1>
+    </div>
+    <div class="row relative">
+        <div id="timeRange"></div>
+    </div>
+    <div class="page-header">
+        <h1>Chosen</h1>
+    </div>
+    <div class="row">
+        <div class="col-xs-3">
+            Chosen:
+            <select class="chosen" data-node="chosen">
+                <option value="-1">全部状态</option>
+                <option value="0">草稿</option>
+                <option value="1">即将投放</option>
+                <option value="2">正在投放</option>
+                <option value="3">已完成</option>
+                <option value="4">暂停</option>
+            </select>
+        </div>
+        <div class="col-xs-3">
+            Multiple:
+            <select class="chosen" multiple data-node="chosen">
+                <option value="-1">全部状态</option>
+                <option value="0">草稿</option>
+                <option value="1">即将投放</option>
+                <option value="2">正在投放</option>
+                <option value="3">已完成</option>
+                <option value="4">暂停</option>
+            </select>
+        </div>
+        <div class="col-xs-3">
+            OptionGroup:
+            <select class="chosen" data-node="chosen">
+                <option value="-1">全部状态</option>
+                <optgroup label="投放">
+                    <option value="1">即将投放</option>
+                    <option value="2">正在投放</option>
+                    <option value="3">已完成</option>
+                </optgroup>
+                <optgroup label="其他">
+                    <option value="0">草稿</option>
+                    <option value="4">暂停</option>
+                </optgroup>
+            </select>
+        </div>
+        <div class="col-xs-3">
+            Chosen With Search:
+            <select class="chosen" data-node="chosen-search">
+                <option value="-1">全部状态</option>
+                <option value="0">草稿</option>
+                <option value="1">即将投放</option>
+                <option value="2">正在投放</option>
+                <option value="3">已完成</option>
+                <option value="4">暂停</option>
+            </select>
+        </div>
+    </div>
+
+
+</div> <!-- /container -->
+
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<%  include common/footer.html %>
+
+<script>
+    seajs.use("http://bigstatic.bitautoimg.com/apps/bootstrapbase/js/pages/widget/main");
+</script>
+
+
