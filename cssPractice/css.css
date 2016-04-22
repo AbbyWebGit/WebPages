@@ -1,0 +1,345 @@
+@charset "utf-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+center,
+u,
+b,
+i {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-style: normal;
+    font-size: 100%;
+    font-weight: normal;
+    font-family: 'Microsoft Yahei', Arial, sans-serif;
+}
+
+:focus {
+    outline: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+}
+
+blockquote,
+q {
+    quotes: "" "";
+}
+
+input,
+textarea {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    height: 0px;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+a img {
+    border: none;
+    text-decoration: none;
+}
+
+fieldset,
+img {
+    border: none;
+}
+
+label,
+button {
+    cursor: pointer;
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    resize: none;
+    *font-size: 100%;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    background-color: #FFF;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+input[type="checkbox"] {
+    width: 13px;
+    height: 13px;
+    overflow: hidden;
+}
+
+body,
+html {
+    font-size: 14px;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.main {
+    margin: 0 auto;
+    width: 980px;
+    border: 1px solid #000;
+}
+
+.box1 {
+    width: 500px;
+    height: 100px;
+    margin: 20px auto;
+    border: 1px solid #121212
+}
+
+.box2 {
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 100px;
+    border: 1px solid #121212
+}
+
+.box3 {
+    width: 500px;
+    height: 100px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #121212;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.satic {
+    width: 500px;
+    height: 100px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #121212;
+    position: static;
+}
+
+.relative {
+    width: 500px;
+    height: 100px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #121212;
+    position: relative;
+}
+
+.absolute {
+    width: 300px;
+    height: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #121212;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.fixed {
+    width: 100px;
+    height: 50px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #121212;
+    position: fixed;
+    top: 0px;
+    left: 50px;
+}
+
+.float img {
+    float: right;
+    margin: 1px;
+}
+
+.float .inner1 {
+    width: 400px;
+    margin: 100px auto;
+    border: 1px solid #000;
+}
+
+.nofloat {
+    margin: 10px auto;
+    width: 100px;
+    color: blue;
+}
+
+.inner2 {
+    width: 500px;
+    margin: 20px auto;
+    border: 1px solid #121212;
+}
+
+.nav {
+    width: 100px;
+    float: left;
+    border: 1px solid red;
+    margin: 2px;
+}
+
+.content {
+    width: 100px;
+    border: 1px solid blue;
+    margin-left: 110px;
+}
+
+.pre .nav {
+    float: left;
+    width: 25%;
+    /* min-width: 100px;*/
+}
+
+.pre .content {
+    margin-left: 30%;
+}
+
+
+/*媒体查询部分*/
+
+.innerMax {
+    width: 500px;
+    border: 1px solid #000;
+    margin: 10px auto;
+}
+
+.contentMax {
+    border: 1px solid #000;
+}
+
+.navMax {
+    border: 1px solid #000;
+}
+
+@media screen and (min-width:700px) {
+    .media .navMax {
+        float: left;
+        width: 25%;
+    }
+    .media .contentMax {
+        margin-left: 26%;
+        border: 1px solid #000;
+    }
+}
+
+@media screen and (max-width:699px) {
+    .media .navMax li {
+        display: inline;
+        background-color: red;
+    }
+}
+
+.inline li {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #000;
+    background-color: red;
+    width: 50px;
+    height: 100px;
+}
+
+.inlineBlock .navFloat {
+    display: inline-block;
+    width: 25%;
+    border: 1px solid red;
+}
+
+.inlineBlock .content {
+    display: inline-block;
+    margin-left: 2%;
+    width: 70%;
+}
+
+.content1 {
+    width: 70%;
+    border: 1px solid red;
+    display: inline-block;
+}

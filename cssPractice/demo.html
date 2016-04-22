@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>css布局练习</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="margin">
+            <h2>块级居中：</h2>
+            <p>宽度固定，一般用margin：0 auto来解决，当浏览器窗口比元素的宽度还要窄时，设置max-width</p>
+        </div>
+        <div class="display">
+            <h2>"display"属性:</h2>
+            <img src="img/display.png">
+            <div>这是一个div。 div 是一个标准的块级元素。一个块级元素会新开始一行并且尽可能撑满容器。其他常用的块级元素包括 p 、 form 和HTML5中的新元素： header 、 footer 、 section 等等。</div>
+            <span>这是一个行内元素</span>
+        </div>
+        <div class="box">
+            <h2>盒模型与box-sizing</h2>
+            <div class="box1">宽为500px,高为100px,没有padding</div>
+            <div class="box2">宽为500px,高为100px,有padding</div>
+            <div class="box3">宽为500px,高为100px,有padding,设置了box-sizing</div>
+        </div>
+        <div class="position">
+            <h2>定位position</h2>
+            <div class="satic">默认值static</div>
+            <div class="relative">
+                <p>相对定位</p>
+                <div class="absolute">
+                    <p>绝对定位，相对于父级的relative，没有relative就相对于body</p>
+                </div>
+                <div class="fixed">
+                    <p>固定定位,相对于视窗来说，与父级relative无关</p>
+                </div>
+            </div>
+        </div>
+        <div class="float">
+            <h2>浮动float</h2>
+            <p>每次使用浮动后，要记得在父级清除浮动，注意下面两个块里面的图片位置</p>
+            <div class="inner1">
+                <p class="nofloat">没清理浮动</p>
+                <img src="img/hello.jpg"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio.
+            </div>
+            <div class="inner1 clearfix">
+                <p class="nofloat">清理浮动</p>
+                <img src="img/hello.jpg"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio.
+            </div>
+            <h2>浮动布局</h2>
+            <p>布局里面的高一般不设置，用里面的元素来撑起</p>
+            <div class="inner2 clearfix">
+                <div class="nav clearfix">左边列表:注意清除浮动，浮动脱离文档流，不能撑起div的高。
+                    <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio.</div>
+                <div class="content">内容top</div>
+                <div class="content">内容bottom</div>
+            </div>
+        </div>
+        <div class="pre">
+            <h2>百分比宽度布局</h2>
+            <div class="inner2 clearfix">
+                <div class="nav">左边列表:注意清除浮动，浮动脱离文档流，不能撑起div的高。
+                    <br> 当布局很窄时， 左边就会被挤扁。更糟糕的是，你不能在 nav 上使用 min-width 来修复这个问题，因为右边的那列是不会遵守它的。
+                </div>
+                <div class="content">内容top</div>
+                <div class="content">内容bottom</div>
+            </div>
+        </div>
+        <div class="media">
+            <h2>媒体查询</h2>
+            <p>媒体查询在头部加入下列代码：<span><</span>meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"></p>
+            <p>媒体查询的宽度是指浏览器宽度，不是指div的宽度，且变化div的宽度只能用百分比，不能用固定值</p>
+            <div class="innerMax clearfix">
+                <div class="navMax">宽度只能设置为百分比
+                    <br> 当浏览器的宽大于700px时候，左边的div向左浮动.
+                    <br> 当浏览器的宽小于700px时候，左边的div不再浮动，列表会变成行内元素且背景变红色.
+                    <ul>
+                        <li>11</li>
+                        <li>22</li>
+                        <li>33</li>
+                        <li>44</li>
+                        <li>55</li>
+                    </ul>
+                </div>
+                <div class="contentMax">宽度只能设置为百分比</div>
+                <div class="contentMax">宽度只能设置为百分比</div>
+            </div>
+        </div>
+        <div class="inline">
+            <h2>display:inline-block</h2>
+            <div class="inner2">
+                <p>列表中的li可以变成行内元素，从而让所有li变成一行</p>
+                <ul>
+                    <li>11</li>
+                    <li>22</li>
+                    <li>33</li>
+                    <li>44</li>
+                    <li>55</li>
+                </ul>
+            </div>
+        </div>
+        <div class="inlineBlock">
+            <h2>display:inline-block布局</h2>
+            <div class="inner2 clearfix">
+                <div class="navFloat">
+                左边不用浮动，用display：inline-block将块变成行内元素,保持原来的位置
+                </div>
+                <div class="content">用display：inline-block将块变成行内元素</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+</script>
+
+</html>
