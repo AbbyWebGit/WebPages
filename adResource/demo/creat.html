@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>易车精准--creat</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.min.css">
+</head>
+
+<body>
+    <div class="adCreat">
+        <div class="head clearfix">
+            <i class="headLogo"></i>
+            <span class="headWord">
+            <span class="curWord">申请资源</span>
+            <span>审批资源</span>
+            </span>
+            <span class="rightMes">
+            <span class="loginMes"><span>欢迎，</span><span class="loginName">yanyc</span></span>
+            <i class="exitIcon"></i>
+            </span>
+        </div>
+        <div class="content">
+            <div class="leftNav">
+                <ul class="leftList">
+                    <li class="creat">
+                        <a href="#">
+                            <i class="iconfont icon-chuangjian"></i>
+                            <p>创建申请单</p>
+                            <div class="curIcon"></div>
+                        </a>
+                    </li>
+                    <li class="all">
+                        <a href="#">
+                            <i class="iconfont icon-wodeshenqing"></i>
+                            <p>全部申请单</p>
+                            <div class="curIcon"></div>
+                        </a>
+                    </li>
+                    <li class="submit">
+                        <a href="#">
+                            <i class="icon-submit"></i>
+                            <p>未提交申请单</p>
+                            <div class="curIcon"></div>
+                        </a>
+                    </li>
+                    <li class="apply">
+                        <a href="#">
+                            <i class="iconfont icon-time"></i>
+                            <p>审批中申请单</p>
+                            <div class="curIcon"></div>
+                        </a>
+                    </li>
+                    <li class="pass">
+                        <a href="#">
+                            <i class="iconfont icon-tongguoupast"></i>
+                            <p>已通过申请单</p>
+                            <div class="curIcon"></div>
+                        </a>
+                    </li>
+                    <li class="reject">
+                        <a href="#">
+                            <i class="iconfont icon-butongguodechacha"></i>
+                            <p>已驳回申请单</p>
+                            <div class="curIcon"></div>
+                        </a>
+                    </li>
+                </ul>
+                <!--  <div class="curIcon"></div> -->
+            </div>
+            <div class="applyContent">
+                <div class="contHead">
+                    <p>内广资源申请单</p>
+                </div>
+                <div class="contMes">
+                    <ul>
+                        <li>申请单：JZ0001</li>
+                        <li>申请人：王小丫</li>
+                        <li>申请日期：2015-07-28</li>
+                        <li>申请人部门：精准广告部门</li>
+                        <li>所属业务：市场推广业务</li>
+                        <li>备注：</li>
+                        <li>
+                            <textarea class="remark">这里写内容</textarea>
+                        </li>
+                    </ul>
+                </div>
+                <div class="electApply">
+                    <div class="electWord"><span>电子申请单：</span><span><a href="#">内广资源申请单.docx</a></span></div>
+                    <div class="electButton">
+                        <span class=""><a href="#">上传电子申请单</a></span>
+                        <span><a href="#">word资源申请单模板下载</a></span></div>
+                    <div class="promptMes">温馨提示：支持上传word/pdf</div>
+                </div>
+                <div class="schedule">
+                    <div class="schIcon clearfix">
+                        <span></span>
+                        <i></i>
+                        <span class="pass"></span>
+                    </div>
+                    <div class="schWord">
+                        <p class="submitMes">
+                            <span class="name">王小丫</span>
+                            <span class="department">精准广告</span>
+                            <span class="state">未提交</span>
+                        </p>
+                        <p class="approveMes">
+                            <span class="name">王小丫</span>
+                            <span class="department">精准广告</span>
+                            <span class="state">未批准</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="applyList">
+                    <table align="center">
+                        <tr>
+                            <td>2015/07/28</td>
+                            <td>王小丫</td>
+                            <td>驳回申请单</td>
+                            <td>
+                                <textarea class="reason">这里写内容</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2015/07/28</td>
+                            <td>王小丫</td>
+                            <td>驳回申请单</td>
+                            <td>
+                                <textarea class="reason">这里写内容</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2015/07/28</td>
+                            <td>王小丫</td>
+                            <td>驳回申请单</td>
+                            <td>
+                                <textarea class="reason">这里写内容</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2015/07/28</td>
+                            <td>王小丫</td>
+                            <td>驳回申请单</td>
+                            <td>
+                                <textarea class="reason">这里写内容</textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="button">
+                    <span><button type="button"  class="back">返回</button></span>
+                    <span><button type="button"  class="delete">删除</button></span>
+                    <span><button type="button"  class="back">保存</button></span>
+                    <span><button type="button" class="submit">提交审批</button></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/index.js"></script>
+    <script language="javascript">
+    $(document).ready(function() {
+        var curIcon = "";
+        $(".leftList li").on("click", function() {
+            var $this = $(this);
+            //console.log($this.children(".curIcon")[0]);
+            if (curIcon != "") {
+                curIcon.css("display", "none");
+            } else {
+                $(".leftList li:first .curIcon").css("display", "none");
+            };
+            $this.find(".curIcon").css("display", "block");
+            curIcon = $this.find(".curIcon");
+
+        });
+    });
+    </script>
+</body>

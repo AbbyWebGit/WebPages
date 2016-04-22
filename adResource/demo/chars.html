@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>易车精准--creat</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.min.css">
+</head>
+
+<body>
+    <div class="adCreat">
+        <div class="head clearfix">
+            <i class="headLogo"></i>
+            <span class="headWord">
+            <span class="curWord">申请资源</span>
+            <span>审批资源</span>
+            </span>
+            <span class="rightMes">
+            <span class="loginMes"><span>欢迎，</span><span class="loginName">yanyc</span></span>
+            <i class="exitIcon"></i>
+            </span>
+        </div>
+        <div class="content">
+             <div class="leftNav">
+                <ul class="leftList">
+                    <li class="creat">
+                        <a href="#">
+                            <i class="iconfont icon-chuangjian"></i>
+                            <p>创建申请单</p>
+                            <div class="curIcon"></div>
+                        </a>
+                    </li>
+                    <li class="all">
+                        <a href="#">
+                            <i class="iconfont icon-wodeshenqing"></i>
+                            <p>全部申请单</p>
+                            <div class="curIcon"></div>
+                        </a>
+                    </li>
+                    <li class="submit">
+                        <a href="#">
+                            <i class="icon-submit"></i>
+                            <p>未提交申请单</p>
+                            <div class="curIcon"></div>
+                        </a>
+                    </li>
+                    <li class="apply">
+                        <a href="#">
+                            <i class="iconfont icon-time"></i>
+                            <p>审批中申请单</p>
+                            <div class="curIcon"></div>
+                        </a>
+                    </li>
+                    <li class="pass">
+                        <a href="#">
+                            <i class="iconfont icon-tongguoupast"></i>
+                            <p>已通过申请单</p>
+                            <div class="curIcon"></div>
+                        </a>
+                    </li>
+                    <li class="reject">
+                        <a href="#">
+                            <i class="iconfont icon-butongguodechacha"></i>
+                            <p>已驳回申请单</p>
+                            <div class="curIcon"></div>
+                        </a>
+                    </li>
+                </ul>
+                <!--  <div class="curIcon"></div> -->
+            </div>
+            <div class="applyContent">
+                <button class="newCreat">新建产品线</button>
+                <div class="chooseCondition">
+                    <span>选择申请部门</span>
+                    <span class="department">
+                        <form >
+                            <select name="department" class="departMes">
+                                <option value="volvo">请选择</option>
+                                <option value="saab">大数据部门</option>
+                                <option value="fiat" selected="selected">易车网站</option>
+                                <option value="audi">易鑫资本</option>
+                            </select>
+                        </form>
+                    </span>
+                    <span class="date">
+                        <span>选择申请时间</span>
+                    <input class="time" type="date" value="2014-01-13" />
+                    <span>到</span>
+                    <input class="time" type="date" value="2014-01-13" />
+                    </span>
+                </div>
+                <div class="search">
+                    <span class="searchCon">
+                        <input type="text" placeholder="请输入申请单号/申请资源/申请人" />
+                        </span>
+                    <button class="searchBtn">搜索</button>
+                </div>
+                <div class="applyDetail">
+                    <table>
+                        <tr>
+                            <th>申请单号</th>
+                            <th>申请资源</th>
+                            <th>电子申请单</th>
+                            <th>申请日期</th>
+                            <th>申请人</th>
+                            <th>申请部门</th>
+                            <th>审批人</th>
+                            <th>状态</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr>
+                            <td>jz0001</td>
+                            <td>内广资源申请</td>
+                            <td>申请单名称.docx</td>
+                            <td>2015/07/28</td>
+                            <td>王小丫</td>
+                            <td>精准广告</td>
+                            <td>王晓</td>
+                            <td class="rejectWord">已驳回</td>
+                            <td><button class="editor">编辑</button></td>
+                        </tr>
+                        <tr>
+                            <td>jz0001</td>
+                            <td>内广资源申请</td>
+                            <td>申请单名称.docx</td>
+                            <td>2015/07/28</td>
+                            <td>王小丫</td>
+                            <td>精准广告</td>
+                            <td>王晓</td>
+                            <td>已驳回</td>
+                            <td>
+                                <button class="submit">提交</button>
+                                <button class="delete">删除</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="applyDetail">
+                    <table>
+                        <tr>
+                            <th>申请单号</th>
+                            <th>申请资源</th>
+                            <th>电子申请单</th>
+                            <th>申请日期</th>
+                            <th>申请人</th>
+                            <th>申请部门</th>
+                            <th>审批人</th>
+                            <th>状态</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr>
+                            <td>jz0001</td>
+                            <td>内广资源申请</td>
+                            <td>申请单名称.docx</td>
+                            <td>2015/07/28</td>
+                            <td>王小丫</td>
+                            <td>精准广告</td>
+                            <td>王晓</td>
+                            <td>已通过</td>
+                            <td>
+                                <button class="agree">同意</button>
+                                <button class="reject">驳回</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>jz0001</td>
+                            <td>内广资源申请</td>
+                            <td>申请单名称.docx</td>
+                            <td>2015/07/28</td>
+                            <td>王小丫</td>
+                            <td>精准广告</td>
+                            <td>王晓</td>
+                            <td>审批中</td>
+                            <td>
+                                <button class="submit">提交</button>
+                                <button class="delete">删除</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="paging">
+                    <span><a>上一页</a></span>
+                    <i class="curPage"><a>1</a></i>
+                    <i><a>2</a></i>
+                    <i><a>3</a></i>
+                    <i><a>4</a></i>
+                    <span class="omit">...</span>
+                    <i><a>9</a></i>
+                    <span><a>下一页</a></span>
+                    <span class="to">到</span>
+                    <input class="pageNum" type="text" />
+                    <span class="page">页</span>
+                    <button class="goBtn">go</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/index.js"></script>
+    <script language="javascript">
+    $(document).ready(function() {
+        var curIcon = "";
+        $(".leftList li").on("click", function() {
+            var $this = $(this);
+            //console.log($this.children(".curIcon")[0]);
+            if (curIcon != "") {
+                curIcon.css("display", "none");
+            } else {
+                $(".leftList li:first .curIcon").css("display", "none");
+            };
+            $this.find(".curIcon").css("display", "block");
+            curIcon = $this.find(".curIcon");
+
+        });
+
+        var aa = "";
+        $(".paging i").on("click", function() {
+            if (aa != "") {
+                aa.removeClass("curPage");
+            }else{
+                $(".paging i:first").removeClass("curPage");
+            };
+            var $this = $(this);
+            aa = $(this);
+            $this.addClass("curPage");
+
+            //$this.addClass("curPage").siblings().removeClass("curPage");
+        })
+
+
+    });
+    </script>
+</body>
